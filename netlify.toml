@@ -1,3 +1,7 @@
 [build]
-  command = "npm install --legacy-peer-deps && npm run build:prod"
-  publish = "dist/andresjosehr-portfolio/browser"
+  command = "npm install --legacy-peer-deps && npm run build"
+  publish = "dist/lucasmeloo/browser"
+  base = "."
+
+[functions]
+  directory = "netlify/functions"
