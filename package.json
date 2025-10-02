@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "preinstall": "npm install --legacy-peer-deps",
     "build": "ng build",
     "build-portfolio": "ng build --configuration production",
     "build:prod": "ng build --configuration production --base-href https://andresjosehr.com/",
