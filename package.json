@@ -1,22 +1,19 @@
 {
   "name": "portfolio",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "preinstall": "npm install --legacy-peer-deps",
     "build": "ng build",
-    "build-portfolio": "ng build --configuration production",
     "build:prod": "ng build --configuration production --base-href https://andresjosehr.com/",
     "postbuild:prod": "cp .nojekyll dist/andresjosehr-portfolio/browser/ && cp CNAME dist/andresjosehr-portfolio/browser/",
     "deploy": "npm run build:prod && npm run postbuild:prod && ngh --dir=dist/andresjosehr-portfolio/browser --cname=andresjosehr.com",
     "deploy:ci": "npm run postbuild:prod && ngh --dir=dist/andresjosehr-portfolio/browser --cname=andresjosehr.com --no-silent",
-    "predeploy": "npm run build:prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^20.0.6",
     "@angular/common": "^20.0.6",
