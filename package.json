@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href https://andresjosehr.com/",
+    "build:prod": "ng build --configuration production --base-href https://lucasmelofullstack.com.br/",
     "postbuild:prod": "cp .nojekyll dist/andresjosehr-portfolio/browser/ && cp CNAME dist/andresjosehr-portfolio/browser/",
     "deploy": "npm run build:prod && npm run postbuild:prod && ngh --dir=dist/andresjosehr-portfolio/browser --cname=andresjosehr.com",
     "deploy:ci": "npm run postbuild:prod && ngh --dir=dist/andresjosehr-portfolio/browser --cname=andresjosehr.com --no-silent",
