@@ -1,7 +1,7 @@
 [build]
-  command = "npm install --legacy-peer-deps && npm run build:prod"
-  publish = "dist/lucasmelofullstack-portfolio/browser"
   base = "."
+  publish = "dist/lucasmelofullstack-portfolio/browser"
+  command = "npm install --legacy-peer-deps && npm run build:prod && npm run postbuild:prod"
 
 [build.environment]
   NODE_VERSION = "20.19.0"
