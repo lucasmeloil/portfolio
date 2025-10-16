@@ -6,9 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href=https://lucasmelofullstack.com.br/",
-    "postbuild:prod": "mkdir -p dist/lucasmelofullstack-portfolio/browser && cp CNAME dist/lucasmelofullstack-portfolio/browser/"
-    ,
+    "build:prod": "ng build --configuration production --base-href=/",
+    "postbuild:prod": "mkdir -p dist/lucasmelofullstack-portfolio/browser && cp CNAME dist/lucasmelofullstack-portfolio/browser/ && cp _redirects dist/lucasmelofullstack-portfolio/browser/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
