@@ -2,6 +2,7 @@
   "name": "lucasmelofullstack-portfolio",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://lucasmelofullstack.netlify.app/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
