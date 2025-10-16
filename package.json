@@ -8,7 +8,8 @@
     "start": "ng serve",
     "build": "ng build",
     "build:prod": "ng build --configuration production --base-href=/",
-    "postbuild:prod": "mkdir -p dist/lucasmelofullstack-portfolio/browser && cp CNAME dist/lucasmelofullstack-portfolio/browser/ && cp _redirects dist/lucasmelofullstack-portfolio/browser/",
+"postbuild:prod": "mkdir -p dist/andresjosehr-portfolio && cp CNAME dist/andresjosehr-portfolio/ && cp _redirects dist/andresjosehr-portfolio/"
+    ,
     "deploy": "ngh --dir=dist/lucasmelofullstack-portfolio/browser -m 'Deploying to GitHub Pages'",
     "test": "ng test",
     "lint": "ng lint",
